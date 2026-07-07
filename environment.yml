@@ -1,0 +1,19 @@
+name: coolscape-icb2026
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - xarray
+  - netcdf4
+  - matplotlib
+  - cartopy
+  - pyshp
+  - shapely
+  - ipywidgets=8.*
+  - folium=0.17.*
+  - branca=0.7.*
+  - jupyter
+  - jupyterlab

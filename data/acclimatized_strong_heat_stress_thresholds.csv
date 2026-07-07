@@ -1,0 +1,109 @@
+region,group,month,day,strong_heat_stress_threshold_35
+Central Athens,Female Adults,7,28,36.857657333333336
+Central Athens,Female Adults,7,29,36.85920711111112
+Central Athens,Female Adults,7,30,36.86182777777778
+Central Athens,Female Adults,7,31,36.86557088888889
+Central Athens,Female Adults,8,1,36.86976044444445
+Central Athens,Female Adults,8,2,36.87443155555556
+Central Athens,Female Adults,8,3,36.8801488888889
+Central Athens,Female Adults,8,4,36.88631822222222
+Central Athens,Female Adults,8,5,36.89273133333334
+Central Athens,Male Adults,7,28,36.65216711111111
+Central Athens,Male Adults,7,29,36.65362511111111
+Central Athens,Male Adults,7,30,36.65609266666667
+Central Athens,Male Adults,7,31,36.659610888888885
+Central Athens,Male Adults,8,1,36.66356311111111
+Central Athens,Male Adults,8,2,36.667988
+Central Athens,Male Adults,8,3,36.673415555555565
+Central Athens,Male Adults,8,4,36.67927222222222
+Central Athens,Male Adults,8,5,36.685380444444455
+Central Athens,Female Seniors,7,28,36.34468488888889
+Central Athens,Female Seniors,7,29,36.346192888888886
+Central Athens,Female Seniors,7,30,36.34877755555556
+Central Athens,Female Seniors,7,31,36.35250022222222
+Central Athens,Female Seniors,8,1,36.35668844444444
+Central Athens,Female Seniors,8,2,36.36136200000001
+Central Athens,Female Seniors,8,3,36.36710222222223
+Central Athens,Female Seniors,8,4,36.37329555555555
+Central Athens,Female Seniors,8,5,36.379750888888886
+Central Athens,Male Seniors,7,28,36.21347822222222
+Central Athens,Male Seniors,7,29,36.215012888888886
+Central Athens,Male Seniors,7,30,36.217534666666666
+Central Athens,Male Seniors,7,31,36.22110688888888
+Central Athens,Male Seniors,8,1,36.22510066666666
+Central Athens,Male Seniors,8,2,36.22955911111111
+Central Athens,Male Seniors,8,3,36.23501711111111
+Central Athens,Male Seniors,8,4,36.24088177777777
+Central Athens,Male Seniors,8,5,36.24698311111111
+West Athens,Female Adults,7,28,37.21277711111111
+West Athens,Female Adults,7,29,37.21612644444445
+West Athens,Female Adults,7,30,37.220132666666665
+West Athens,Female Adults,7,31,37.22516177777778
+West Athens,Female Adults,8,1,37.23054622222222
+West Athens,Female Adults,8,2,37.23607244444445
+West Athens,Female Adults,8,3,37.24234311111111
+West Athens,Female Adults,8,4,37.248554
+West Athens,Female Adults,8,5,37.25447666666666
+West Athens,Male Adults,7,28,36.98724000000001
+West Athens,Male Adults,7,29,36.99041066666667
+West Athens,Male Adults,7,30,36.99420155555556
+West Athens,Male Adults,7,31,36.998962444444444
+West Athens,Male Adults,8,1,37.00406266666667
+West Athens,Male Adults,8,2,37.00929577777777
+West Athens,Male Adults,8,3,37.01522577777778
+West Athens,Male Adults,8,4,37.021092
+West Athens,Male Adults,8,5,37.026702444444446
+West Athens,Female Seniors,7,28,36.70316422222223
+West Athens,Female Seniors,7,29,36.70654644444445
+West Athens,Female Seniors,7,30,36.710586
+West Athens,Female Seniors,7,31,36.71565022222222
+West Athens,Female Seniors,8,1,36.72106511111111
+West Athens,Female Seniors,8,2,36.726616
+West Athens,Female Seniors,8,3,36.73288111111111
+West Athens,Female Seniors,8,4,36.73908177777778
+West Athens,Female Seniors,8,5,36.74499111111111
+West Athens,Male Seniors,7,28,36.55073311111112
+West Athens,Male Seniors,7,29,36.553986666666674
+West Athens,Male Seniors,7,30,36.55787377777778
+West Athens,Male Seniors,7,31,36.56273088888889
+West Athens,Male Seniors,8,1,36.567910222222224
+West Athens,Male Seniors,8,2,36.573218222222216
+West Athens,Male Seniors,8,3,36.579198
+West Athens,Male Seniors,8,4,36.585122
+West Athens,Male Seniors,8,5,36.590778
+Piraeus,Female Adults,7,28,36.799721111111104
+Piraeus,Female Adults,7,29,36.80723288888888
+Piraeus,Female Adults,7,30,36.81515266666667
+Piraeus,Female Adults,7,31,36.823788444444446
+Piraeus,Female Adults,8,1,36.832568
+Piraeus,Female Adults,8,2,36.84125155555555
+Piraeus,Female Adults,8,3,36.8503011111111
+Piraeus,Female Adults,8,4,36.85914311111111
+Piraeus,Female Adults,8,5,36.867288
+Piraeus,Male Adults,7,28,36.60498511111111
+Piraeus,Male Adults,7,29,36.61215288888889
+Piraeus,Male Adults,7,30,36.61971311111112
+Piraeus,Male Adults,7,31,36.627946666666666
+Piraeus,Male Adults,8,1,36.63631733333333
+Piraeus,Male Adults,8,2,36.64458177777777
+Piraeus,Male Adults,8,3,36.65319888888889
+Piraeus,Male Adults,8,4,36.66162133333333
+Piraeus,Male Adults,8,5,36.66937333333333
+Piraeus,Female Seniors,7,28,36.28135711111111
+Piraeus,Female Seniors,7,29,36.28894177777777
+Piraeus,Female Seniors,7,30,36.296953555555554
+Piraeus,Female Seniors,7,31,36.305663555555554
+Piraeus,Female Seniors,8,1,36.31450488888889
+Piraeus,Female Seniors,8,2,36.32323644444445
+Piraeus,Female Seniors,8,3,36.33234266666667
+Piraeus,Female Seniors,8,4,36.34122555555555
+Piraeus,Female Seniors,8,5,36.34938755555555
+Piraeus,Male Seniors,7,28,36.16015511111112
+Piraeus,Male Seniors,7,29,36.16738444444445
+Piraeus,Male Seniors,7,30,36.17498533333333
+Piraeus,Male Seniors,7,31,36.183272
+Piraeus,Male Seniors,8,1,36.19169222222222
+Piraeus,Male Seniors,8,2,36.19999444444444
+Piraeus,Male Seniors,8,3,36.20865577777778
+Piraeus,Male Seniors,8,4,36.21711733333333
+Piraeus,Male Seniors,8,5,36.22490111111111

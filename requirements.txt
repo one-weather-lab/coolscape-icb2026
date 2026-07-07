@@ -1,0 +1,12 @@
+numpy
+pandas
+xarray
+netCDF4
+matplotlib
+cartopy
+pyshp
+shapely
+ipywidgets>=8.0
+folium>=0.17
+branca>=0.7
+jupyter
