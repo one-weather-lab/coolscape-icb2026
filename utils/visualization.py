@@ -337,7 +337,7 @@ def plot_diff_panel_maps(
         subplot_kw={"projection": ccrs.PlateCarree()},
     )
     plt.subplots_adjust(
-        left=0.06, right=0.90, top=0.975, bottom=0.06,
+        left=0.06, right=0.90, top=0.94, bottom=0.06,
         wspace=0.02, hspace=0.04,
     )
 
@@ -421,8 +421,7 @@ def plot_diff_panel_maps(
     cb.set_label(r"$\Delta$T ($\degree$C)", fontsize=12)
     cb.ax.tick_params(labelsize=12)
 
-    fig.savefig(str(out_dir / "fig_1.2_diff_panel_maps.png"),
-                dpi=300, bbox_inches="tight")
+    fig.savefig(str(out_dir / "fig_1.2_diff_panel_maps.png"), dpi=300)
     plt.show()
     ds.close()
 
