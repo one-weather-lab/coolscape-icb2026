@@ -14,6 +14,7 @@ License: MIT
 # -----------------------------------------------------------------------------
 from __future__ import annotations
 
+import io
 import logging
 from pathlib import Path
 
@@ -30,6 +31,7 @@ import xarray as xr
 from matplotlib.font_manager import FontProperties
 from matplotlib.patches import Patch
 from matplotlib.ticker import FormatStrFormatter
+from IPython.display import Image, display
 
 from .configuration import (
     HW_PHASES,
@@ -422,7 +424,12 @@ def plot_diff_panel_maps(
     cb.ax.tick_params(labelsize=12)
 
     fig.savefig(str(out_dir / "fig_1.2_diff_panel_maps.png"), dpi=300)
-    plt.show()
+    # display the figure in Jupyter without saving to file
+    buf = io.BytesIO()
+    fig.savefig(buf, format="png", dpi=plt.rcParams["figure.dpi"])
+    plt.close(fig)
+    display(Image(data=buf.getvalue()))
+
     ds.close()
 
 
