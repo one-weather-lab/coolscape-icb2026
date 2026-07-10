@@ -38,7 +38,7 @@ from .mpet_data import (
     load_strong_heat_stress_thresholds,
     lookup_daily_strong_heat_stress_thresholds,
     load_mpet_group,
-    load_enriched,
+    load_rayman_output,
     hourly_category_frequencies,
     count_prolonged_exposure_days,
 )
@@ -99,7 +99,7 @@ __all__ = [
     "load_strong_heat_stress_thresholds",
     "lookup_daily_strong_heat_stress_thresholds",
     "load_mpet_group",
-    "load_enriched",
+    "load_rayman_output",
     "hourly_category_frequencies",
     "count_prolonged_exposure_days",
     # population.py

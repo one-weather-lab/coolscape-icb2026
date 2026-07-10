@@ -132,8 +132,7 @@ def load_mpet_group(
     Parameters
     ----------
     rayman_dir : Path
-        Directory containing the mPET CSVs. Supports either the original
-        top-level CSVs or a published bundle with only ``enriched/`` CSVs.
+        Directory containing the mPET CSVs.
     region : str
         Key in ``REGIONS``.
     group : str
@@ -158,18 +157,10 @@ def load_mpet_group(
             fname = f"{region}_{hw}_{group_label}_base_case_for_{csv_mat}.csv"
         else:
             fname = f"{region}_{hw}_{group_label}_{csv_mat}.csv"
-        top_level_path = Path(rayman_dir) / fname
-        enriched_path = Path(rayman_dir) / "enriched" / fname
+        csv_path = Path(rayman_dir) / fname
 
-        if top_level_path.exists():
-            df = pd.read_csv(top_level_path)
-        elif enriched_path.exists():
-            # Published bundles keep only enriched files; for Sections 2.1/2.2
-            # we need only the top-level subset of columns.
-            df = pd.read_csv(
-                enriched_path,
-                usecols=["date", "time", "mPET"],
-            )
+        if csv_path.exists():
+            df = pd.read_csv(csv_path, usecols=["date", "time", "mPET"])
         else:
             LOG.warning("Missing mPET CSV: %s", fname)
             continue
@@ -186,7 +177,7 @@ def load_mpet_group(
     return pd.concat(frames, ignore_index=True)
 
 
-def load_enriched(
+def load_rayman_output(
     rayman_dir: Path,
     region: str,
     hw: str,
@@ -195,13 +186,12 @@ def load_enriched(
     *,
     base: bool,
 ) -> pd.DataFrame:
-    """Load an enriched mPET CSV with coordinates.
+    """Load a RayMan mPET CSV with coordinates.
 
     Parameters
     ----------
     rayman_dir : Path
-        Root RayMan output directory (enriched CSVs are in the ``enriched/``
-        subdirectory).
+        Root RayMan output directory. CSVs live directly in this directory.
     region : str
         Key in ``REGIONS``.
     hw : str
@@ -216,8 +206,8 @@ def load_enriched(
     Returns
     -------
     pd.DataFrame
-        Enriched schema with ``date``, ``time``, ``lon``, ``lat``, ``mPET``,
-        plus ``lon5``, ``lat5``, ``hour``, ``day``, ``month``.
+        Schema with ``date``, ``time``, ``lon``, ``lat``, ``mPET``, plus
+        ``lon5``, ``lat5``, ``hour``, ``day``, ``month``.
     """
     csv_mat = SCENARIOS[material]["csv"]
     group_label = POPULATION_GROUPS[group]["label"].replace(" ", "_")
@@ -226,11 +216,9 @@ def load_enriched(
     else:
         fname = f"{region}_{hw}_{group_label}_{csv_mat}.csv"
 
-    # Enriched CSVs live in the enriched/ subdirectory
-    path = Path(rayman_dir) / "enriched" / fname
+    path = Path(rayman_dir) / fname
     if not path.exists():
-        raise FileNotFoundError(f"Enriched CSV not found: {path}")
-    # The published bundle keeps only the columns used by the notebook.
+        raise FileNotFoundError(f"RayMan output CSV not found: {path}")
     df = pd.read_csv(
         path,
         usecols=["date", "time", "lon", "lat", "mPET"],

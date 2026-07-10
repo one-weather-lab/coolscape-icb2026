@@ -47,7 +47,7 @@ from .configuration import (
 from .mpet_data import (
     count_prolonged_exposure_days,
     hourly_category_frequencies,
-    load_enriched,
+    load_rayman_output,
     load_mpet_group,
     lookup_daily_strong_heat_stress_thresholds,
 )
@@ -889,8 +889,8 @@ def plot_prolonged_exposure_maps(
                 )
             ]
 
-            # Load enriched base-case mPET
-            base_df = load_enriched(
+            # Load base-case mPET
+            base_df = load_rayman_output(
                 rayman_dir, region_key, hw, group_key, material, base=True,
             )
 
@@ -1047,11 +1047,11 @@ def plot_benefited_area(
                 width = 0.25
                 offset = (k - (n_scn - 1) / 2.0) * width
 
-                # Load base and scenario enriched CSVs
-                base_df = load_enriched(
+                # Load base and scenario RayMan CSVs
+                base_df = load_rayman_output(
                     rayman_dir, region_key, hw, group_key, sc_key, base=True,
                 )
-                scen_df = load_enriched(
+                scen_df = load_rayman_output(
                     rayman_dir, region_key, hw, group_key, sc_key, base=False,
                 )
 
@@ -1171,10 +1171,10 @@ def plot_benefited_population(
             total_pop = pop_totals[region_key]
 
             for sc_key in SCENARIOS:
-                base_df = load_enriched(
+                base_df = load_rayman_output(
                     rayman_dir, region_key, hw, group_key, sc_key, base=True,
                 )
-                scen_df = load_enriched(
+                scen_df = load_rayman_output(
                     rayman_dir, region_key, hw, group_key, sc_key, base=False,
                 )
                 benefited = identify_benefited_points(
@@ -1325,10 +1325,10 @@ def plot_benefited_population_maps(
                 totals_df, rinfo["ru_str"], pop_col,
             )
 
-            base_df = load_enriched(
+            base_df = load_rayman_output(
                 rayman_dir, region_key, hw, group_key, material, base=True,
             )
-            scen_df = load_enriched(
+            scen_df = load_rayman_output(
                 rayman_dir, region_key, hw, group_key, material, base=False,
             )
 
