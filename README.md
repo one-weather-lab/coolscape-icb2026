@@ -1,6 +1,6 @@
 # ICB2026 Workshop Notebook
 
-This repository contains the notebook for the workshop "A health-relevant computational framework for just resilience: Linking targeted urban cooling scenarios to population-wide benefits," held at the 24th International Congress of Biometeorology in Novi Sad, Serbia, on 16 July 2026. It reproduces an assessment of targeted cool-roof interventions in the Athens Urban Area, Greece, during the heat wave of 28 July to 5 August 2021. 
+This repository contains the notebook for the workshop "A health-relevant computational framework for just resilience: Linking targeted urban cooling scenarios to population-wide benefits," held at the [24th International Congress of Biometeorology](https://www.nsucl.com/events/icb-2026) in Novi Sad, Serbia, on 16 July 2026. It reproduces an assessment of targeted cool-roof interventions in the Athens Urban Area, Greece, during the heat wave of 28 July to 5 August 2021. 
 
 The workflow links atmospheric cooling to population-specific heat-stress response and health-related benefits.
 
